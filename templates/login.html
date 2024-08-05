@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block title %} Flask Authentication System - Login Page {% endblock %}
+{% block content %}
+{% include 'header.html' %}
+{% include 'message.html' %}
+
+<div class="w3-container w3-round w3-blue" style="width:40%; margin:0 auto;">
+    <form class="w3-container w3-section" method="post" action="login" autocomplete="off">
+        <h2 class="w3-center">&#8987; Login Page &#8987;</h2>
+        <div class="w3-section">
+            <label for="email_id"><b>Email ID</b></label>
+            <input class="w3-input w3-border w3-light-grey w3-round" type="email" id="email_id" name="email_id"
+                   placeholder="Email ID" required>
+        </div>
+        <div class="w3-section">
+            <label for="user_password"><b>Password</b></label>
+            <input class="w3-input w3-border w3-light-grey w3-round" type="password" id="user_password"
+                   name="user_password"
+                   placeholder="Password" required>
+        </div>
+        <div class="w3-section">
+            <br>
+            <input class="w3-button w3-block w3-light-grey w3-round" type="submit" value="Login">
+        </div>
+    </form>
+    <div class="w3-container w3-section w3-center">
+        <a class="w3-button w3-round" href="/signup">Not a member? Signup now!</a>
+    </div>
+    <br>
+</div>
+
+{% endblock %}

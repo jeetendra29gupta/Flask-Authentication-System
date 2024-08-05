@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %} Flask Authentication System - Signup Page {% endblock %}
+{% block content %}
+{% include 'header.html' %}
+{% include 'navigation.html' %}
+{% include 'message.html' %}
+
+<div class="w3-panel w3-center">
+    <h1>Your email ID is {{ user.email_id }}</h1>
+    <h2>Welcome to Dashboard</h2>
+</div>
+
+
+{% endblock %}
